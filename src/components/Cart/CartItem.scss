@@ -1,0 +1,113 @@
+.cart {
+  &__product {
+    display: flex;
+    padding: 1.5rem 1rem;
+
+    &:not(:last-of-type) {
+      margin-bottom: 2rem;
+    }
+    &-alt {
+      background-color: var(--color-white);
+    }
+  }
+  &__item {
+    display: flex;
+    flex: 0 1 65%;
+  }
+  &__img {
+    width: 20rem;
+    @media (max-width: 420px) {
+      width: 15rem;
+    }
+    height: 14.5rem;
+    border-radius: 3px;
+    margin-right: 2rem;
+    @media (max-width: 420px) {
+      margin-right: 7px;
+    }
+  }
+  &__title {
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    flex-basis: 70%;
+    text-align: end;
+  }
+  &__details {
+    padding-right: 1rem;
+    flex-grow: 1;
+    display: flex;
+    font-size: 1.4rem;
+    flex-direction: column;
+    justify-content: space-between;
+    & figcaption {
+      display: flex;
+      justify-content: space-between;
+      & span:first-child {
+        font-weight: 600;
+        flex-basis: 30%;
+      }
+    }
+  }
+  &__sum {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 600;
+    // align-self: flex-end ;
+  }
+  &__tsum {
+    padding-top: 2.5rem;
+    text-align: end;
+  }
+  &__quantity {
+    display: flex;
+    flex: 0 1 30%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &--btn{
+      @media (max-width: 600px) {
+        background-color: orangered !important;
+        padding: 3px 10px !important;
+      }
+      &:hover {
+      background-color: rgb(75, 75, 75) !important;
+    }
+    }
+    
+
+    &--label {
+      color: var(--color-white);
+      margin: 0 1rem;
+      line-height: 2rem;
+      @media (max-width: 420px) {
+        margin: 0;
+      }
+      font-size: 1.4rem;
+      font-weight: 600;
+      text-align: center;
+      width: 4rem;
+      height: 2rem;
+      background-color: var(--color-grey-light);
+      border-radius: 3px;
+    }
+  }
+}
+
+.quantity {
+  margin: 0 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+  width: 4rem;
+  height: 2rem;
+  background-color: var(--color-grey-light);
+  border-radius: 3px;
+}

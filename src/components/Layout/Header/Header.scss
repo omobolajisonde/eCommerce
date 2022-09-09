@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 0 2rem;
+}
+.logo {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      color: inherit;
+    }
+  }
+  &__name {
+    margin-left: 1rem;
+    font-size: 2rem;
+  }
+  &__logo {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+}
